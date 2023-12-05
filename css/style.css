@@ -61,10 +61,9 @@ h1,h2,h3,p{
   color: #fff; 
   text-align: center;
   position: relative;
-  margin-top:900px;
-  bottom:0px;
   width: 100%;
   padding: 20px 0;
+  margin-top: 230px;
 }
 
 .footerCheckout {
@@ -94,7 +93,7 @@ h1,h2,h3,p{
   color: #fff; 
   text-align: center;
   position: relative;
-  margin-top:900px;
+  margin-top:200px;
   bottom:0px;
   width: 100%;
   padding: 20px 0;
@@ -139,35 +138,104 @@ border: none;
 cursor: pointer;
 }
 
-#btnSort{
+#btnSort {
   position: absolute;
-  margin-top:-60px;
-  margin-left:5px
+  margin-top: 170px;
+  margin-left: -1360px;
+  background-color: #3498db; /* Blue color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+
+  /* Add box shadow for a subtle lift effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+#btnSort:hover {
+  background-color: #2980b9; /* Darker blue color on hover */
+}
+ 
+  #product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    margin-top:200px;
+  }
+
+
+
+.searching {
+    display: flex;
+    align-items: center;
+}
+
+#input {
+  position:absolute;
+    padding: 8px;
+    margin-top:180px;
+    margin-left: 1100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search {
+
+    padding: 10px 15px;
+    background-color: #3498db; /* Blue color */
+    color: #fff; /* Text color */
+    border: none;
+    margin-left:1320px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:180px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+#search:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+
 
 /* admin css */
 table {
 width: 100%;
 border-collapse: collapse;
 margin-bottom: 20px;
-margin-top: 210px; /* Add margin-top to move the table down */
+margin-top: 260px; /* Add margin-top to move the table down */
 }
 
 th, td {
 border: 1px solid #ddd;
 padding: 8px;
-text-align: left;
+text-align: center;
 color: white;
 }
 
 th {
-background-color: #f2f2f2;
+background-color: transparent;
 }
 
 
+#adminAdd{
+  position:absolute;
+  padding: 5px 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+margin-top:-90px;
+margin-left:1326px;
+cursor: pointer;
+}
 
-
-#adminAdd,#adminEdit {
+#adminEdit {
 padding: 5px 10px;
 background-color: #007bff;
 color: #fff;
@@ -186,4 +254,23 @@ background-color: #dc3545;
 
 .delete:hover {
 background-color: #bd2130;
+}
+
+#adminHeader{
+  position: absolute;
+  color:white;
+  font-size: 100px;
+  margin-top: -120px;
+  margin-left:610px;
+}
+
+#spinner{
+  margin-top:150px;
+  color:white;
+}
+
+
+.para{
+  color:white;
+  font-size: 50px;
 }
